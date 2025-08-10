@@ -32,7 +32,8 @@
     "build:ghpages": "npm run build:prod -- --base-href=/esday-demo-angular/ && del-cli ghpages && cpy \"dist/esday-demo-angular/browser/**\" ghpages  && cpy \"dist/esday-demo-angular/3rdpartylicenses.txt\" ghpages --flat",
     "test": "ng test",
     "test:run": "ng test --watch=false",
-    "test:coverage": "ng test --watch=false --code-coverage=true"
+    "test:coverage": "ng test --watch=false --code-coverage=true",
+    "lint": "ng lint"
   },
   "prettier": {
     "overrides": [
@@ -46,25 +47,28 @@
   },
   "private": false,
   "dependencies": {
-    "@angular/common": "^20.1.0",
-    "@angular/compiler": "^20.1.0",
-    "@angular/core": "^20.1.0",
-    "@angular/forms": "^20.1.0",
-    "@angular/platform-browser": "^20.1.0",
-    "@angular/router": "^20.1.0",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.15.0"
+    "@angular/common": "^20.1.6",
+    "@angular/compiler": "^20.1.6",
+    "@angular/core": "^20.1.6",
+    "@angular/forms": "^20.1.6",
+    "@angular/platform-browser": "^20.1.6",
+    "@angular/router": "^20.1.6",
+    "rxjs": "~7.8.2",
+    "tslib": "^2.8.1",
+    "zone.js": "~0.15.1"
   },
   "devDependencies": {
     "@angular/build": "^20.1.5",
     "@angular/cli": "^20.1.5",
-    "@angular/compiler-cli": "^20.1.0",
+    "@angular/compiler-cli": "^20.1.6",
     "@vitest/coverage-v8": "^3.2.4",
+    "angular-eslint": "20.1.1",
     "cpy-cli": "^5.0.0",
     "del-cli": "^6.0.0",
+    "eslint": "^9.33.0",
     "jsdom": "^26.1.0",
-    "typescript": "~5.8.2",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "8.39.0",
     "vitest": "^3.2.4"
   }
 }
