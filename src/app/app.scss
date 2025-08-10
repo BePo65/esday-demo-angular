@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  display: grid;
+  grid-template-columns: 100px 1rem 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: 'symbol . title';
+  margin: 1rem 0;
+  padding: 0 0.5rem 0 0;
+}
+
+.header-symbol {
+  grid-area: symbol;
+  padding-left: 0.5rem;
+}
+
+.header-title {
+  grid-area: title;
+}
+
+main {
+  padding: 0 1rem 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.button-set {
+  margin: 0 1em 0 0;
+}
+
+.date-now-label,
+.date-then-label {
+  display: inline-block;
+  min-width: 9em;
+}
+
+.footer {
+  font-size: small;
+  margin: 1rem 0 0.5rem 1rem;
+}

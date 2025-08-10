@@ -1,7 +1,7 @@
 {
   "name": "esday-demo-angular",
-  "version": "0.4.1",
-  "description": "Minimal demo for using the esday library in a plain html page",
+  "version": "0.5.0",
+  "description": "Minimal demo for using the esday library in a basic Angular app",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BePo65/esday-demo-angular.git"
@@ -44,6 +44,7 @@
     "@angular/forms": "^20.1.6",
     "@angular/platform-browser": "^20.1.6",
     "@angular/router": "^20.1.6",
+    "esday": "^0.5.0",
     "rxjs": "~7.8.2",
     "tslib": "^2.8.1",
     "zone.js": "~0.15.1"
