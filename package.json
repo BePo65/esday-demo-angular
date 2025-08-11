@@ -1,6 +1,6 @@
 {
   "name": "esday-demo-angular",
-  "version": "0.5.0",
+  "version": "0.5.0-3",
   "description": "Minimal demo for using the esday library in a basic Angular app",
   "repository": {
     "type": "git",

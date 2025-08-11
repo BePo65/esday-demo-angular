@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.content {
+  margin: 0;
+}
+
 header {
   align-items: center;
   background-color: #fff;
@@ -25,7 +29,7 @@ header {
 }
 
 main {
-  padding: 0 1rem 1rem;
+  margin: 0;
 }
 
 h1 {
@@ -45,5 +49,5 @@ h1 {
 
 .footer {
   font-size: small;
-  margin: 1rem 0 0.5rem 1rem;
+  margin: 3rem 0 0.5rem;
 }
