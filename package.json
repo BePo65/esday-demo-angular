@@ -1,6 +1,6 @@
 {
   "name": "esday-demo-angular",
-  "version": "0.5.0-3",
+  "version": "0.5.0-4",
   "description": "Minimal demo for using the esday library in a basic Angular app",
   "repository": {
     "type": "git",
@@ -38,21 +38,21 @@
   },
   "private": false,
   "dependencies": {
-    "@angular/common": "^20.1.6",
-    "@angular/compiler": "^20.3.2",
-    "@angular/core": "^20.1.6",
-    "@angular/forms": "^20.3.2",
-    "@angular/platform-browser": "^20.1.6",
-    "@angular/router": "^20.3.2",
+    "@angular/common": "^20.3.17",
+    "@angular/compiler": "^20.3.17",
+    "@angular/core": "^20.3.17",
+    "@angular/forms": "^20.3.17",
+    "@angular/platform-browser": "^20.3.17",
+    "@angular/router": "^20.3.17",
     "esday": "^0.5.0",
     "rxjs": "~7.8.2",
     "tslib": "^2.8.1",
     "zone.js": "~0.15.1"
   },
   "devDependencies": {
-    "@angular/build": "^20.1.5",
-    "@angular/cli": "^20.1.5",
-    "@angular/compiler-cli": "^20.3.2",
+    "@angular/build": "^20.3.19",
+    "@angular/cli": "^20.3.19",
+    "@angular/compiler-cli": "^20.3.17",
     "@vitest/coverage-v8": "^3.2.4",
     "angular-eslint": "20.3.0",
     "cpy-cli": "^5.0.0",
