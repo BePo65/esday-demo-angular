@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { EsDay, esday } from 'esday';
 import advancedFormatPlugin from 'esday/plugins/advancedFormat';
@@ -10,6 +10,7 @@ esday.extend(advancedFormatPlugin);
   imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class App {
   protected now: EsDay;
