@@ -1,10 +1,19 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: '/'
-  schedule:
-    interval: monthly
-  open-pull-requests-limit: 10
-  ignore:
-    - dependency-name: 'typescript'
-      versions: ['5.9.x']
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: 'typescript'
+        versions: ['5.9.x']
+
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'monthly'
+    cooldown:
+      default-days: 7
