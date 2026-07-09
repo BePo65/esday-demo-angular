@@ -9,7 +9,7 @@ updates:
     open-pull-requests-limit: 10
     ignore:
       - dependency-name: 'typescript'
-        versions: ['5.9.x']
+        versions: ['5.9.x', '6.x', '7.x']
 
   - package-ecosystem: 'github-actions'
     directory: '/'
