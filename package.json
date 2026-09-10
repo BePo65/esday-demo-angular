@@ -1,6 +1,6 @@
 {
   "name": "esday-demo-angular",
-  "version": "1.0.0-Angular22",
+  "version": "1.1.0-Angular22",
   "description": "Minimal demo for using the esday library in a basic Angular app",
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
+    "lint": "ng lint",
     "build": "ng build",
     "build:prod": "ng build --configuration production",
     "build:watch": "ng build --watch --configuration development",
@@ -33,42 +34,41 @@
     "test": "ng test",
     "test:run": "ng test --watch=false",
     "test:coverage": "ng test --coverage --watch=false",
-    "format": "prettier --write \"src/**/*.{ts,html,scss}\"",
-    "lint": "ng lint"
+    "format": "prettier --write \"src/**/*.{ts,html,scss}\""
   },
   "private": false,
   "dependencies": {
-    "@angular/common": "^22.0.6",
-    "@angular/compiler": "^22.0.6",
-    "@angular/core": "^22.0.6",
-    "@angular/forms": "^22.0.6",
-    "@angular/platform-browser": "^22.0.6",
-    "@angular/router": "^22.0.6",
-    "esday": "^1.0.0",
+    "@angular/common": "^22.1.5",
+    "@angular/compiler": "^22.1.5",
+    "@angular/core": "^22.1.5",
+    "@angular/forms": "^22.1.5",
+    "@angular/platform-browser": "^22.1.5",
+    "@angular/router": "^22.1.5",
+    "esday": "^1.1.0",
     "rxjs": "~7.8.2",
     "tslib": "^2.8.1"
   },
   "devDependencies": {
-    "@angular/build": "^22.0.6",
-    "@angular/cli": "^22.0.6",
-    "@angular/compiler-cli": "^22.0.6",
+    "@angular/build": "^22.1.5",
+    "@angular/cli": "^22.1.5",
+    "@angular/compiler-cli": "^22.1.5",
     "@eslint/js": "^10.0.1",
-    "@vitest/coverage-v8": "^4.1.9",
-    "angular-eslint": "22.0.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "angular-eslint": "22.2.0",
     "cpy-cli": "^7.0.0",
     "del-cli": "^7.0.0",
-    "eslint": "^10.3.0",
+    "eslint": "^10.9.0",
     "eslint-config-prettier": "^10.1.8",
-    "jsdom": "^29.1.1",
-    "prettier": "^3.9.4",
+    "jsdom": "^30.0.1",
+    "prettier": "^3.9.6",
     "typescript": "^6.0.3",
-    "typescript-eslint": "8.60.1",
-    "vitest": "^4.1.9"
+    "typescript-eslint": "8.67.0",
+    "vitest": "^4.1.11"
   },
   "allowScripts": {
-    "@parcel/watcher@2.5.6": true,
     "msgpackr-extract@3.0.4": true,
-    "lmdb@3.5.4": true,
-    "esbuild@0.28.1": true
+    "esbuild@0.28.2": true,
+    "@parcel/watcher@2.6.0": true,
+    "lmdb@3.5.6": true
   }
 }
