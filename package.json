@@ -1,6 +1,6 @@
 {
   "name": "esday-demo-angular",
-  "version": "0.6.4-Angular21",
+  "version": "1.0.0-Angular22",
   "description": "Minimal demo for using the esday library in a basic Angular app",
   "repository": {
     "type": "git",
@@ -54,6 +54,7 @@
     "@angular/compiler-cli": "^22.0.6",
     "@eslint/js": "^10.0.1",
     "@vitest/coverage-v8": "^4.1.9",
+    "angular-eslint": "^22.0.0",
     "cpy-cli": "^7.0.0",
     "del-cli": "^7.0.0",
     "eslint": "^10.6.0",
