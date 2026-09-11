@@ -7,7 +7,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  publish:
+  # Build job
+  build:
     permissions:
       contents: write
 
@@ -28,15 +29,30 @@ jobs:
           npm ci
           npm run build:ghpages
 
-      - name: Publish current web page to GitHub Pages
-        uses: rayluo/github-pages-overwriter@v1.3
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v5
         with:
-          # You can use whatever directory your project uses, for example "wwwroot".
-          # Such a directory does *not* have to already exist in your repo,
-          # it could be an output directory created dynamically by your static website builder.
-          source-directory: ghpages
+          name: github-pages
+          path: ghpages/
 
-          # Optional. Default value "gh_pages".
-          # It specifies the temporary branch which hosts the static website.
-          # Each build will OVERWRITE this branch.
-          target-branch: gh_pages
+  # Deployment job
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
+
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Publish current web page to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5.0.1
+        with:
+          artifact_name: github-pages
