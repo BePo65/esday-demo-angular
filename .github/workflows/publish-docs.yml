@@ -50,6 +50,10 @@ jobs:
 
     runs-on: ubuntu-24.04
 
+    # Uses following settings for Github Pages:
+    #   Build and deployment > Source: GithubAction (with publish-src-to-github-pages workflow)
+    # and for Environments "github-pages":
+    #   Deployment branches and tags > "main"
     steps:
       - name: Publish current web page to GitHub Pages
         id: deployment
