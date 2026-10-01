@@ -57,7 +57,7 @@
     "angular-eslint": "22.2.0",
     "cpy-cli": "^7.0.0",
     "del-cli": "^7.0.0",
-    "eslint": "^10.9.0",
+    "eslint": "^10.11.0",
     "eslint-config-prettier": "^10.1.8",
     "jsdom": "^30.0.1",
     "prettier": "^3.9.6",
